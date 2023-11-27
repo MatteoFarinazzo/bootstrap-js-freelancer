@@ -2,11 +2,43 @@ let arrayScontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
 let arrayScontiUtilizzati = [];
 
 
+
+
+let arrayDoneWork = [
+    {
+        img : `src="./img/cabin.png" alt="log cabin"`,
+        work: "Cabin Website"
+    },
+    {
+        img : `src="./img/cake.png" alt="foto completo verde"`,
+        work: "Cake Website"
+    },
+    {
+        img : `src="./img/circus.png" alt="log cabin"`,
+        work: "Circus Website"
+    },
+    {
+        img : `src="./img/game.png" alt="gamepad"`,
+        work: "Game Website"
+    },
+    {
+        img : `src="./img/safe.png" alt="grey safe"`,
+        work: "Safe Website"
+    },
+    {
+        img : `src="./img/submarine.png" alt="yellow submarine"`,
+        work: "Submarine Website"
+    },
+
+]
+
+arrayDoneWork.forEach(function(arrayDoneWork){
+
 let card = `<div class="col-lg-4 col-md-6 col-12 mb-5 card-hov">
-<img class="img-fluid" src="./img/cabin.png" alt="foto completo verde">
+<img class="img-fluid" ${arrayDoneWork.img}">
 
 <div class="text-center border pt-2 shadow">
-    <h5>Cabin Website</h5>
+    <h5>${arrayDoneWork.work}</h5>
     <div class="pb-2">
       <button type="button" class="btn btn-info m-2">Preview</button>
       <button type="button" class="btn btn-outline-info m-2">Visit site</button>
@@ -15,6 +47,8 @@ let card = `<div class="col-lg-4 col-md-6 col-12 mb-5 card-hov">
 </div>`
 
 document.getElementById("card_row").innerHTML += card;
+
+});
 
 
 
