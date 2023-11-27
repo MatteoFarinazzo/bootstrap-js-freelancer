@@ -45,12 +45,14 @@ function calculatePriceForTheWork(event){
     else if(arrayScontiValidi.includes(discountInsert) && arrayScontiUtilizzati.includes(discountInsert)){
         alert("Hai già utilizzato questo codice!");
         document.getElementById("final_price").innerHTML = "Il costo finale è di" + " " + price + " " + "£";
-        document.getElementById("inputCodeDiscount").innerHTML = `<span class="text-danger">${discountInsert}</span>`;
+        document.getElementById("discount_box").innerHTML = `<label for="inputCodeDiscount" class="form-label">Discount Code</label>
+        <input type="text" class="form-control text-danger" id="inputCodeDiscount" value="${discountInsert}"> `;
     }
     else if(!arrayScontiValidi.includes(discountInsert)){
         alert("Il codice inserito non è valido");
         document.getElementById("final_price").innerHTML = "Il costo finale è di" + " " + price + " " + "£";
-        document.getElementById("inputCodeDiscount").innerHTML = `<span class="text-danger">${discountInsert}</span>`;
+        document.getElementById("discount_box").innerHTML = `<label for="inputCodeDiscount" class="form-label">Discount Code</label>
+        <input type="text" class="form-control text-danger" id="inputCodeDiscount" value="${discountInsert}"> `;
     }
     else {
         document.getElementById("final_price").innerHTML = "Il costo finale è di" + " " + price + " " + "£";
