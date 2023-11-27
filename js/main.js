@@ -2,6 +2,20 @@ let arrayScontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
 let arrayScontiUtilizzati = [];
 
 
+let card = `<div class="col-lg-4 col-md-6 col-12 mb-5 card-hov">
+<img class="img-fluid" src="./img/cabin.png" alt="foto completo verde">
+
+<div class="text-center border pt-2 shadow">
+    <h5>Cabin Website</h5>
+    <div class="pb-2">
+      <button type="button" class="btn btn-info m-2">Preview</button>
+      <button type="button" class="btn btn-outline-info m-2">Visit site</button>
+    </div>
+</div>
+</div>`
+
+document.getElementById("card_row").innerHTML += card;
+
 
 
 
