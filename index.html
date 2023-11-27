@@ -52,72 +52,76 @@
 
       </div>
     </div>
-    </div>
     
-
-  
 
     <div class="bg-info mt-5 " id="contact">
       <div class="text-center justify-content-center p-4">
         <h3>WANT AN OFFER?</h3>
       </div>
-
-    <div class="container">
-
-      <form class="row g-3" onsubmit="calculatePriceForTheWork(event)">
-
-        <div class="col-lg-6 col-md-6 col-12">
-          <label for="inputFirstName" class="form-label">First name</label>
-          <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your first name..." >
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <label for="inputLastName" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="inputLastName" placeholder="Enter your last name...">
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <label for="inputEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <label for="inputNumero" class="form-label">Hours requested</label>
-          <input type="number" class="form-control" id="inputNumero" placeholder="Hours requested...">
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <label for="inputWork" class="form-label">Type of work</label>
-          <select id="inputWork" class="form-select">
-            <option value="20.50">Back-End</option>
-            <option value="15.30">Front-End</option>
-            <option value="33.60">Analisi Progettuale</option>
-          </select>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12" id="discount_box">
-          <label for="inputCodeDiscount" class="form-label">Discount Code</label>
-          <input type="text" class="form-control" id="inputCodeDiscount">
-        </div>
-        <div class="col-12">            
-          <p class="pb-2">Message</p>
-          <div class="form-floating mb-4">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2" class="text-secondary">Specify your work commission...</label>
+    
+      <div class="container">
+    
+        <form class="row g-3" onsubmit="calculatePriceForTheWork(event)">
+    
+          <div class="col-lg-6 col-md-6 col-12">
+            <label for="inputFirstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your first name...">
           </div>
 
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-warning mb-4">Send</button>
-        </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <label for="inputLastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Enter your last name...">
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <label for="inputNumero" class="form-label">Hours requested</label>
+            <input type="number" class="form-control" id="inputNumero" placeholder="Hours requested...">
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <label for="inputWork" class="form-label">Type of work</label>
+            <select id="inputWork" class="form-select">
+              <option value="20.50">Back-End</option>
+              <option value="15.30">Front-End</option>
+              <option value="33.60">Analisi Progettuale</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12" id="discount_box">
+            <label for="inputCodeDiscount" class="form-label">Discount Code</label>
+            <input type="text" class="form-control" id="inputCodeDiscount">
+          </div>
+          
+          <div class="col-12">
+            <p class="pb-2">Message</p>
+            <div class="form-floating mb-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class="text-secondary">Specify your work commission...</label>
+            </div>
+    
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-warning mb-4">Send</button>
+            </div>
+          </div>
+    
+          <div class="mb-5">
+            <h3 id="final_price"> </h3>
+    
+          </div>
+    
+        </form>
+    
+    
       </div>
-
-        <div class="mb-5">
-          <h3 id="final_price"> </h3>
-
-        </div>
-
-      </form>
-
     
     </div>
-
-        </div>
-      </div>
+    </div>
     </div>
     
 
