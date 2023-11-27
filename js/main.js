@@ -92,7 +92,7 @@ function calculatePriceForTheWork(event){
         document.getElementById("discount_box").innerHTML = `<label for="inputCodeDiscount" class="form-label">Discount Code</label>
         <input type="text" class="form-control text-danger" id="inputCodeDiscount" value="${discountInsert}"> `;
     }
-    else if(!arrayScontiValidi.includes(discountInsert)){
+    else if(!arrayScontiValidi.includes(discountInsert) && discountInsert != ""){
         alert("Il codice inserito non è valido");
         document.getElementById("final_price").innerHTML = "Il costo finale è di" + " " + price + " " + "£";
 
